@@ -5,7 +5,7 @@ set -eu
 BUILD_DIR="$1"
 CACHE_DIR="$2"
 
-METABASE_VERSION=`cat $BUILD_DIR/metabase-version`
+METABASE_VERSION=`v0.26.1`
 METABASE_DIR="$BUILD_DIR/target/uberjar"
 
 METABASE_JAR="$METABASE_DIR/metabase.jar"

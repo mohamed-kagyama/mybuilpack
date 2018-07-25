@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# This is a Heroku buildpack script: https://devcenter.heroku.com/articles/buildpack-api
+
+# This is a Heroku buildpack script: https://devcenter.heroku.com/articles/buildpack-api
+
+set -eu
+
+cat << EOF
+---
+addons:
+  - heroku-postgresql
+EOF
+

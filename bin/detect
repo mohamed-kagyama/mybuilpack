@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# This is a Heroku buildpack script: https://devcenter.heroku.com/articles/buildpack-api
+
+set -eu
+
+if [ -f "$1/metabase-version" ]; then
+  echo "Metabase"
+  exit 0
+else
+  exit 1
+fi
